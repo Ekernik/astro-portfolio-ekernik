@@ -1,24 +1,26 @@
+---
+import H2 from './ui/H2.astro';
+import Link from './ui/Link.astro';
+import Text from './ui/Text.astro';
+---
+
 <section class='flex flex-col gap-2'>
-  <h2 class='text-2xl font-bold mb-2'>About Me</h2>
-  <p class='text-sm'>
+  <H2>About Me</H2>
+  <Text>
     Hi, I'm a former professional musician who discovered a new passion for
     programming.
-  </p>
-  <p class='text-sm'>
+  </Text>
+  <Text>
     I specialize in transforming beautiful Figma designs into accessible and
     semantically rich web components.
-  </p>
-  <p class='text-sm'>
+  </Text>
+  <Text>
     Learning new things is something I strive for. And I enjoy the process of
     becoming better me every single day.
-  </p>
-  <p class='text-sm'>
+  </Text>
+  <Text>
     Outside of work, I enjoy traveling around the world, learning new ~human~
     languages and eating delicious foods 😋
-  </p>
-  <a
-    href='#'
-    class='text-sm font-bold underline w-fit text-orange'
-    >Download my resume in PDF</a
-  >
+  </Text>
+  <Link href='#'>Download my resume in PDF</Link>
 </section>

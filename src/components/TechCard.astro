@@ -1,9 +1,12 @@
 ---
+import H3 from './ui/H3.astro';
+import Text from './ui/Text.astro';
+
 const { title, techList } = Astro.props;
 ---
 
 <div class='bg-egg p-4 flex flex-col gap-0 border-border shadow-sm'>
-  <h3 class='font-bold text-sm mb-2'>{title}</h3>
+  <H3>{title}</H3>
 
-  {techList.map((tech: string) => <p class='text-sm'>{tech}</p>)}
+  {techList.map((tech: string) => <Text>{tech}</Text>)}
 </div>

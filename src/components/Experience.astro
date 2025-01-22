@@ -1,15 +1,17 @@
+---
+import H2 from './ui/H2.astro';
+import Link from './ui/Link.astro';
+import Text from './ui/Text.astro';
+---
+
 <section class='flex flex-col gap-2'>
-  <h2 class='text-2xl font-bold mb-2'>Experience</h2>
-  <p class='text-sm'>
+  <H2>Experience</H2>
+  <Text>
     I have 4 years of experience as a front-end developer with some backend
     expertise.
-  </p>
-  <p class='text-sm'>
-    Completed CS50 course by Harvard (<a
-      href='/CS50x.png'
-      target='_blank'
-      class='text-sm font-bold text-orange'
-      >certificate</a
-    >)
-  </p>
+  </Text>
+  <Text>
+    Completed CS50 course by Harvard (
+    <Link href='/CS50x.png'>certificate</Link> )
+  </Text>
 </section>
