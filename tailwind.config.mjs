@@ -6,6 +6,9 @@ export default {
       orange: '#E57234',
       egg: '#F7F7F7',
       border: '#F5F5F5',
+      github: '#2dba4e',
+      linkedin: '#0077B5',
+      telegram: '#24A1DE',
     },
     fontFamily: {
       serif: ['Istok Web', 'serif'],
