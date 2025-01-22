@@ -14,9 +14,23 @@ import Footer from '../components/Footer.astro';
       name='generator'
       content={Astro.generator}
     />
+    <link
+      rel='preconnect'
+      href='https://fonts.googleapis.com'
+    />
+    <link
+      rel='preconnect'
+      href='https://fonts.gstatic.com'
+      crossorigin
+    />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap'
+      rel='stylesheet'
+    />
+
     <title>Nikita Ekern</title>
   </head>
-  <body>
+  <body class='font-serif'>
     <slot />
     <Footer />
   </body>
