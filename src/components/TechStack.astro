@@ -1,0 +1,23 @@
+---
+import TechSection from './TechSection.astro';
+import { techStack } from './techStack';
+---
+
+<section class='flex flex-col gap-2'>
+  <h2 class='text-2xl font-bold mb-2'>Tech Stack</h2>
+  <p class='text-sm mb-2'>
+    I'm always open to learn new technologies, but tech below is something I'm
+    very confident in and use in my projects day to day.
+  </p>
+
+  <section class='grid grid-cols-2 gap-5'>
+    {
+      techStack.map((stack) => (
+        <TechSection
+          title={stack.title}
+          techList={stack.techList}
+        />
+      ))
+    }
+  </section>
+</section>
