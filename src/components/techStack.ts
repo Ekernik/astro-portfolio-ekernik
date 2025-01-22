@@ -4,10 +4,6 @@ export const techStack = [
     techList: ['Next.js', 'Astro', 'HTMX'],
   },
   {
-    title: 'Libraries',
-    techList: ['React.js', 'AuthJS', 'next-intl'],
-  },
-  {
     title: 'Styling',
     techList: ['Shadcn/ui', 'TailwindCSS', 'SCSS Modules'],
   },
@@ -22,5 +18,9 @@ export const techStack = [
   {
     title: 'Queries',
     techList: ['ReactQuery', 'GraphQL', 'Apollo Client'],
+  },
+  {
+    title: 'Other Libraries',
+    techList: ['React.js', 'AuthJS', 'next-intl'],
   },
 ];
