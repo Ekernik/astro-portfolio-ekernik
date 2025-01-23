@@ -4,21 +4,25 @@ import Link from './ui/Link.astro';
 import Text from './ui/Text.astro';
 ---
 
-<section class='flex flex-col gap-2'>
+<section
+  class='flex flex-col gap-2'
+  itemscope
+  itemtype='http://schema.org/Person'
+>
   <H2>About Me</H2>
-  <Text>
+  <Text itemProp='description'>
     Hi, I'm a former professional musician who discovered a new passion for
     programming.
   </Text>
-  <Text>
+  <Text itemProp='description'>
     I specialize in transforming beautiful Figma designs into accessible and
     semantically rich web components.
   </Text>
-  <Text>
+  <Text itemProp='description'>
     Learning new things is something I strive for. And I enjoy the process of
     becoming better me every single day.
   </Text>
-  <Text>
+  <Text itemProp='description'>
     Outside of work, I enjoy traveling around the world, learning new ~human~
     languages and eating delicious foods 😋
   </Text>

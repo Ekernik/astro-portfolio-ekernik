@@ -1,3 +1,10 @@
-<p class='text-sm sm:text-base md:text-lg'>
+---
+const { itemProp } = Astro.props;
+---
+
+<p
+  class='text-sm sm:text-base md:text-lg'
+  itemprop={itemProp ? itemProp : undefined}
+>
   <slot />
 </p>

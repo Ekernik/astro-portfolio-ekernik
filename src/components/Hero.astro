@@ -3,17 +3,25 @@ import { FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa';
 import H1 from './ui/H1.astro';
 ---
 
-<section class='flex flex-col gap-4 items-center mb-8'>
-  <H1 class='text-5xl md:text-7xl font-bold'>Nikita Ekern</H1>
+<section
+  class='flex flex-col gap-4 items-center mb-8'
+  itemscope
+  itemtype='http://schema.org/Person'
+>
+  <H1 class='text-5xl md:text-7xl font-bold'
+    ><span itemprop='givenName'>Nikita</span>
+    <span itemprop='familyName'>Ekern</span></H1
+  >
 
   <p class='font-bold text-xs md:text-lg'>
-    Front-end Developer | Creative Thinker | Human
+    <span itemprop='jobTitle'>Front-end Developer</span> | Creative Thinker | Human
   </p>
 
   <div class='flex gap-2'>
     <a
       href='https://github.com/Ekernik'
       class='p-2 rounded-lg hover:bg-github/10 hover:text-github focus-within:bg-github/10 focus-within:text-github outline-github transition-colors'
+      itemprop='sameAs'
     >
       <FaGithub size='40' />
     </a>
@@ -21,6 +29,7 @@ import H1 from './ui/H1.astro';
     <a
       href='https://www.linkedin.com/in/ekernik/'
       class='p-2 rounded-lg hover:bg-linkedin/10 hover:text-linkedin focus-within:bg-linkedin/10 focus-within:text-linkedin outline-linkedin transition-colors'
+      itemprop='sameAs'
     >
       <FaLinkedin size='40' />
     </a>
@@ -28,6 +37,7 @@ import H1 from './ui/H1.astro';
     <a
       href='https://t.me/Ekernik'
       class='p-2 rounded-lg hover:bg-telegram/10 hover:text-telegram focus-within:bg-telegram/10 focus-within:text-telegram outline-telegram transition-colors'
+      itemprop='sameAs'
     >
       <FaTelegram size='40' />
     </a>

@@ -12,7 +12,11 @@ import Text from './ui/Text.astro';
     confident in and use in my projects day to day.
   </Text>
 
-  <section class='grid grid-cols-2 md:grid-cols-3 gap-5 mt-2'>
+  <section
+    class='grid grid-cols-2 md:grid-cols-3 gap-5 mt-2'
+    itemscope
+    itemtype='http://schema.org/ItemList'
+  >
     {
       techStack.map((stack) => (
         <TechCard
