@@ -1,19 +1,11 @@
 ---
-import heartteamThumbnail from '../assets/images/heartteam.png';
+import ProjectCard from './ProjectCard.astro';
+import { projects } from './projects';
 import H2 from './ui/H2.astro';
-import Link from './ui/Link.astro';
-import Text from './ui/Text.astro';
 ---
 
 <section class='flex flex-col gap-2'>
   <H2>Projects</H2>
-  <div class='w-full h-auto aspect-video bg-orange rounded-lg'>
-    <img
-      src={heartteamThumbnail.src}
-      alt=''
-      class='object-cover'
-    />
-  </div>
-  <Link href='https://heartteamspb.com'>heartteamspb.com</Link>
-  <Text>Website for cardiology clinic.</Text>
+
+  {projects.map((project) => <ProjectCard {...project} />)}
 </section>

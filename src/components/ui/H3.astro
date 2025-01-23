@@ -1,3 +1,10 @@
-<h3 class='font-bold text-sm sm:text-base md:text-lg mb-2'>
+---
+const { itemProp } = Astro.props;
+---
+
+<h3
+  class='font-bold text-sm sm:text-base md:text-lg mb-2'
+  itemprop={itemProp || undefined}
+>
   <slot />
 </h3>

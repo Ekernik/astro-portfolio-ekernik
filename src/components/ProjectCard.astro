@@ -1,0 +1,28 @@
+---
+import H3 from './ui/H3.astro';
+import Link from './ui/Link.astro';
+import Text from './ui/Text.astro';
+
+const { imageSrc, title, linkText, linkUrl, description } = Astro.props;
+---
+
+<section
+  itemscope
+  itemtype='http://schema.org/CreativeWork'
+>
+  <H3 itemProp='name'>{title}</H3>
+  <div class='w-full h-auto aspect-video bg-orange rounded-lg mb-2'>
+    <img
+      src={imageSrc}
+      alt={`Screenshot of homepage of ${title} webiste`}
+      class='object-cover'
+      itemprop='image'
+    />
+  </div>
+  <Text itemProp='description'>{description}</Text>
+  <Link
+    href={linkUrl}
+    itemProp='url'
+    >{linkText}</Link
+  >
+</section>
