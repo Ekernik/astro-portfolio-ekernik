@@ -1,4 +1,5 @@
 ---
+import CS50Image from '../assets/images/CS50x.png';
 import H2 from './ui/H2.astro';
 import Link from './ui/Link.astro';
 import Text from './ui/Text.astro';
@@ -10,8 +11,13 @@ import Text from './ui/Text.astro';
     I have 4 years of experience as a front-end developer with some backend
     expertise.
   </Text>
-  <Text>
-    Completed CS50 course by Harvard (
-    <Link href='/CS50x.png'>certificate</Link> )
-  </Text>
+  <Text>Completed CS50 course by Harvard</Text>
+  <Link href='/CS50x.png'>
+    <img
+      src={CS50Image.src}
+      alt='CS50x Certificate, Awarded from Cambridge, Massachusetts in the year 2023'
+      loading='lazy'
+      class='object-cover border opacity-90 hover:opacity-100'
+    />
+  </Link>
 </section>
