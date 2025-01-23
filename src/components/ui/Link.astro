@@ -1,11 +1,11 @@
 ---
-const { href, itemProp } = Astro.props;
+const { href, itemProp, type = 'link' } = Astro.props;
 ---
 
 <a
   href={href}
   target='_blank'
-  class='text-sm sm:text-base md:text-lg font-bold underline w-fit text-orange'
+  class={`text-sm sm:text-base md:text-lg font-bold ${type === 'button' ? 'flex gap-2 items-center px-4 py-2 rounded-lg bg-orange hover:bg-orange/90 text-white outline-offset-2 outline-orange' : 'underline text-orange'} w-fit `}
   itemprop={itemProp || undefined}
 >
   <slot /></a

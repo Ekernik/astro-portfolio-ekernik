@@ -1,4 +1,5 @@
 ---
+import { IoDocumentText } from 'react-icons/io5';
 import H2 from './ui/H2.astro';
 import Link from './ui/Link.astro';
 import Text from './ui/Text.astro';
@@ -26,5 +27,9 @@ import Text from './ui/Text.astro';
     Outside of work, I enjoy traveling around the world, learning new ~human~
     languages and eating delicious foods 😋
   </Text>
-  <Link href='resume.pdf'>See my resume in PDF</Link>
+  <Link
+    href='resume.pdf'
+    type='button'
+    >See my resume in PDF <IoDocumentText size='16' />
+  </Link>
 </section>
